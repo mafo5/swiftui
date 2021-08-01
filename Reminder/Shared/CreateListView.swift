@@ -32,8 +32,10 @@ struct CreateListView: View {
     }
 }
 
+#if DEBUG
 struct CreateListView_Previews: PreviewProvider {
     static var previews: some View {
         CreateListView()
     }
 }
+#endif

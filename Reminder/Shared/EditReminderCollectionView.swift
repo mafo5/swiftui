@@ -68,8 +68,10 @@ struct EditReminderCollectionView: View {
     }
 }
 
+#if DEBUG
 struct EditReminderCollectionView_Previews: PreviewProvider {
     static var previews: some View {
         EditReminderCollectionView(reminderCollection: ReminderCollection(name: "", color: .blue, icon: "list.dash"))
     }
 }
+#endif

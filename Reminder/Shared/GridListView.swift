@@ -14,17 +14,19 @@ struct GridListView<Item, Content: View>: View {
     let grid: Int
     let items: [Item]
     let content: (Item) -> Content
+    let spacing: CGFloat
     
-    init(_ grid: Int, items: [Item], @ViewBuilder content: @escaping (Item) -> Content) {
+    init(_ grid: Int, items: [Item], spacing: CGFloat = 20, @ViewBuilder content: @escaping (Item) -> Content) {
         self.grid = grid
         self.items = items
         self.content = content
+        self.spacing = spacing
     }
     
     var body: some View {
-        VStack (spacing: 10) {
+        VStack (spacing: spacing) {
             ForEach(Array(items.chunked(into: grid).enumerated()), id: \.offset) { rowIndex, chunk in
-                HStack (spacing: 10) {
+                HStack (spacing: spacing) {
                     ForEach (Array(chunk.enumerated()), id: \.offset) { colIndex, item in
                         content(item)
                     }
@@ -41,8 +43,16 @@ struct TestItem: Identifiable {
 
 struct GridListView_Previews: PreviewProvider {
     static var previews: some View {
-        GridListView(2, items: [TestItem(), TestItem(), TestItem()]) { item in
-            Text("Item \(item.id)")
+        HStack {
+            GridListView(2, items: [TestItem(), TestItem(), TestItem()], spacing: 10) { item in
+                HStack {
+                    VStack {
+                        Text("Item \(item.id)")
+                    }
+                }
+                    .background(Color.gray)
+            }
+                .padding()
         }
     }
 }

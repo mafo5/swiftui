@@ -12,7 +12,7 @@ struct ReminderApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OverviewView()
         }
     }
 }
