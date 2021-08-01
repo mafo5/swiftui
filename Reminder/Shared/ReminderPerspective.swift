@@ -15,9 +15,9 @@ struct ReminderPerspective: Identifiable {
 }
 
 var allPersprectiveList: [ReminderPerspective] = [
-    ReminderPerspective(name: "Heute", color: .blue, icon: "note"),
-    ReminderPerspective(name: "Geplant", color: .red, icon: "calendar"),
-    ReminderPerspective(name: "Alle", color: Color(UIColor.darkGray), icon: "tray.fill"),
-    ReminderPerspective(name: "Markiert", color: .orange, icon: "flag.fill"),
-    ReminderPerspective(name: "Mir zugewiesen", color: .green, icon: "person.fill"),
+    ReminderPerspective(name: "Today", color: .blue, icon: "note"),
+    ReminderPerspective(name: "Scheduled", color: .red, icon: "calendar"),
+    ReminderPerspective(name: "All", color: Color(UIColor.darkGray), icon: "tray.fill"),
+//    ReminderPerspective(name: "Markiert", color: .orange, icon: "flag.fill"),
+//    ReminderPerspective(name: "Mir zugewiesen", color: .green, icon: "person.fill"),
 ]

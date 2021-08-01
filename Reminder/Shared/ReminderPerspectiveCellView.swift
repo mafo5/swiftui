@@ -21,14 +21,15 @@ struct ReminderPerspectiveCellView: View {
                     .font(iconSize)
                 Spacer()
                 Text("0")
-                    .font(.largeTitle)
+                    .font(.title)
                     .bold()
             }
             Text(reminderPerspective.name)
                 .bold()
                 .foregroundColor(.gray)
         }
-            .padding()
+        .padding(.horizontal, 15)
+        .padding(.vertical, 10)
             .background(colorScheme == .dark ? Color(UIColor.secondarySystemBackground) : Color(UIColor.systemBackground))
             .cornerRadius(10)
     }

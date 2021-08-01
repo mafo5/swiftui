@@ -16,7 +16,7 @@ struct GridListView<Item, Content: View>: View {
     let content: (Item) -> Content
     let spacing: CGFloat
     
-    init(_ grid: Int, items: [Item], spacing: CGFloat = 20, @ViewBuilder content: @escaping (Item) -> Content) {
+    init(_ grid: Int, items: [Item], spacing: CGFloat = 15, @ViewBuilder content: @escaping (Item) -> Content) {
         self.grid = grid
         self.items = items
         self.content = content

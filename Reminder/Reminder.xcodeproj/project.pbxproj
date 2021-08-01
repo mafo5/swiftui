@@ -103,11 +103,11 @@
 				1F0A482226B4353E009373C5 /* OverviewView.swift */,
 				1F0A482126B4353E009373C5 /* ReminderApp.swift */,
 				1F1E00B826B437900058150D /* ReminderCollection.swift */,
+				1F10495926B6FC8D00C5612C /* ReminderCollectionCellView.swift */,
 				1F10493026B6E81400C5612C /* ReminderPerspective.swift */,
 				1F10494226B6F4E900C5612C /* ReminderPerspectiveCellView.swift */,
-				1F10494D26B6F66200C5612C /* ReminderPerspectiveListView.swift */,
 				1F10495226B6FA5B00C5612C /* ReminderPerspectiveEditCellView.swift */,
-				1F10495926B6FC8D00C5612C /* ReminderCollectionCellView.swift */,
+				1F10494D26B6F66200C5612C /* ReminderPerspectiveListView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";

@@ -38,6 +38,7 @@ struct ReminderCollectionCellView: View {
                     .foregroundColor(.accentColor)
             }
         }
+        .padding(.vertical, 5)
     }
 }
 

@@ -12,9 +12,9 @@ struct OverviewView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     @State var editMode: EditMode = .inactive
     @State var reminderCollectionList: [ReminderCollection] = [
-        ReminderCollection(name: "Todo", color: .pink, icon: "list.dash", items: [ReminderListItem(name: "something")]),
-        ReminderCollection(name: "Erinnerungen", color: .orange, icon: "list.dash", items: [ReminderListItem(name: "something 1"), ReminderListItem(name: "something 2"), ReminderListItem(name: "something 3"), ReminderListItem(name: "something 4")]),
-        ReminderCollection(name: "Neue Liste", color: .blue, icon: "list.dash", items: [ReminderListItem(name: "something")]),
+//        ReminderCollection(name: "Todo", color: .pink, icon: "list.dash", items: [ReminderListItem(name: "something")]),
+//        ReminderCollection(name: "Erinnerungen", color: .orange, icon: "list.dash", items: [ReminderListItem(name: "something 1"), ReminderListItem(name: "something 2"), ReminderListItem(name: "something 3"), ReminderListItem(name: "something 4")]),
+        ReminderCollection(name: "Reminders", color: .blue, icon: "list.dash", items: []),
     ]
     @State var persprectiveList: [ReminderPerspective] = allPersprectiveList
     @State var selectedPerspectiveList: Set<UUID> = [
@@ -25,7 +25,7 @@ struct OverviewView: View {
     @State private var editReminderCollection: ReminderCollection? = nil
     @State private var editReminderListItem: ReminderListItem? = nil
     
-    var iconSize: Font = .body
+    var iconSize: Font = .caption
     
     var body: some View {
         NavigationView {
@@ -45,7 +45,7 @@ struct OverviewView: View {
                             .padding()
                     }
                     List {
-                        Section(header: Text("Meine Listen")
+                        Section(header: Text(NSLocalizedString("My Lists", comment: ""))
                                     .font(.system(.title2, design: .rounded))
                                     .foregroundColor(.primary)
                                     .bold()
@@ -68,18 +68,19 @@ struct OverviewView: View {
                     }
                     ToolbarItemGroup(placement: .bottomBar) {
                         Button(action: {
-                            print("Neue Erinnerung")
+                            print("New Reminder")
                             self.editReminderListItem = ReminderListItem(name: "")
                         }) {
                             HStack {
                                 Image(systemName: "plus.circle.fill")
-                                Text("Neue Erinnerung")
+                                    .font(.title)
+                                Text("New Reminder")
                             }
                         }
                         // Spacer to push both buttons to each sides
                         Spacer()
-                        Button("Neue Liste") {
-                            print("Neue Liste")
+                        Button("Add List") {
+                            print("Add List")
                             self.editReminderCollection = ReminderCollection(name: "", color: .blue, icon: "list.dash")
                         }.sheet(item: $editReminderCollection) { detail in
                             EditReminderCollectionView(reminderCollection: detail)

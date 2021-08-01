@@ -58,6 +58,8 @@ struct EditReminderCollectionView: View {
                     
             }
                 .padding()
+                .navigationTitle("Neue Liste")
+                .navigationBarTitleDisplayMode(.inline)
                 .navigationBarItems(leading: Button("Abbrechen") {
                     print("Neue Liste Abbrechen")
                     self.presentation.wrappedValue.dismiss()
