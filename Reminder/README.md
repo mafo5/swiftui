@@ -7,6 +7,7 @@
 | Apple Original | Remake |
 |----------------|--------|
 | <img src="Overview.png"> | <img src="Remake_Overview.png"> |
+| <img src="Overview_edit.png"> | <img src="Remake_Overview_edit.png"> |
 
 ### New List
 
