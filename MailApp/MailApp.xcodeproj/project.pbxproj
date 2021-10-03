@@ -13,6 +13,10 @@
 		1F558C5826BBC69900D84125 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F558C4326BBC69700D84125 /* ContentView.swift */; };
 		1F558C5926BBC69900D84125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F558C4426BBC69900D84125 /* Assets.xcassets */; };
 		1F558C5A26BBC69900D84125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F558C4426BBC69900D84125 /* Assets.xcassets */; };
+		7AA4456C2709EF7A00E432A8 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4456B2709EF7A00E432A8 /* AccountListView.swift */; };
+		7AA4456D2709EF7A00E432A8 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4456B2709EF7A00E432A8 /* AccountListView.swift */; };
+		7AA4456F2709FD9000E432A8 /* MailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4456E2709FD9000E432A8 /* MailListView.swift */; };
+		7AA445702709FD9000E432A8 /* MailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4456E2709FD9000E432A8 /* MailListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		1F558C5126BBC69900D84125 /* MailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F558C5326BBC69900D84125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F558C5426BBC69900D84125 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		7AA4456B2709EF7A00E432A8 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
+		7AA4456E2709FD9000E432A8 /* MailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,8 @@
 				1F558C4226BBC69700D84125 /* MailAppApp.swift */,
 				1F558C4326BBC69700D84125 /* ContentView.swift */,
 				1F558C4426BBC69900D84125 /* Assets.xcassets */,
+				7AA4456B2709EF7A00E432A8 /* AccountListView.swift */,
+				7AA4456E2709FD9000E432A8 /* MailListView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -187,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA4456C2709EF7A00E432A8 /* AccountListView.swift in Sources */,
 				1F558C5726BBC69900D84125 /* ContentView.swift in Sources */,
 				1F558C5526BBC69900D84125 /* MailAppApp.swift in Sources */,
+				7AA4456F2709FD9000E432A8 /* MailListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA4456D2709EF7A00E432A8 /* AccountListView.swift in Sources */,
 				1F558C5826BBC69900D84125 /* ContentView.swift in Sources */,
 				1F558C5626BBC69900D84125 /* MailAppApp.swift in Sources */,
+				7AA445702709FD9000E432A8 /* MailListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
